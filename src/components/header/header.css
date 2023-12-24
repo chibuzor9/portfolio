@@ -1,0 +1,104 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+  /*background-image: url(../../assets/images/network.gif);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* ************* CTA *********/
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* ************* SOCIALS *********/
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  right: 0;
+  bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background-color: var(--primary-text);
+}
+
+/* ************* Display PICTURE *********/
+
+.me {
+  background-color: var(--primary-text);
+  width: 22rem;
+  height: 22rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  border-radius: 50%;
+  margin-top: 4rem;
+}
+
+.me > img {
+  padding: 1rem 0 1rem 0;
+  border-radius: 50%;
+}
+
+/* ************* SCROLL DOWN *********/
+.scroll__down {
+  position: absolute;
+  left: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 400;
+  font-size: 1rem;
+  background: var(--secondary-bg);
+  padding: 0 0.8rem;
+  border-radius: 2rem;
+}
+
+/* ******** MEDIA QUERIES (MEDIUM DEVICES)   ******** */
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 110vh;
+    padding-top: 5rem;
+  }
+}
+
+/* ******** MEDIA QUERIES (SMALL DEVICES)   ******** */
+
+@media screen and (max-width: 600px) {
+  header {
+    padding-top: 4rem;
+    background-image: none;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+
+  .me {
+    width: 18rem;
+    height: 18rem;
+    left: calc(50% - 9rem);
+    margin-top: 3rem;
+  }
+}
