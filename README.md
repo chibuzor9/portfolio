@@ -10,6 +10,7 @@ Welcome to my personal portfolio repository! 🌟 This portfolio showcases my sk
 - [Key Features](#key-features)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
+- [Upcoming Features](#upcoming-features)
 - [License](#license)
 - [Author](#author)
 
