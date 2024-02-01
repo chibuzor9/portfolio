@@ -1,16 +1,16 @@
-import React from 'react'
-import './experience.css'
+import React from "react";
+import "./experience.css";
 
-import { ImHtmlFive } from "react-icons/im"
-import { FaCss3Alt } from "react-icons/fa"
-import { DiJavascript1 } from "react-icons/di"
-import { FaBootstrap } from "react-icons/fa"
-import { FaReact } from "react-icons/fa"
-import { FaAngular } from "react-icons/fa"
-import { DiNodejsSmall } from "react-icons/di"
-import { FaPython } from "react-icons/fa"
-import { BsDatabaseCheck } from "react-icons/bs"
-import { FaUikit } from 'react-icons/fa'
+import { ImHtmlFive } from "react-icons/im";
+import { FaCss3Alt } from "react-icons/fa";
+import { DiJavascript1 } from "react-icons/di";
+import { FaBootstrap } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaAngular } from "react-icons/fa";
+import { DiNodejsSmall } from "react-icons/di";
+import { FaPython } from "react-icons/fa";
+import { BsDatabaseCheck } from "react-icons/bs";
+import { FaUikit } from "react-icons/fa";
 
 const Experience = () => {
   return (
@@ -75,7 +75,6 @@ const Experience = () => {
         </div>
         {/* End of Frontend  */}
 
-
         <div className="experience__backend">
           <h3>Backend Development</h3>
           <div className="experience__info">
@@ -118,7 +117,7 @@ const Experience = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

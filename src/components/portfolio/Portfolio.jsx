@@ -9,7 +9,6 @@
 // import IMG5 from "../../assets/images/dp.jpeg"
 // import IMG6 from "../../assets/images/dp.jpeg"
 
-
 // const data = [
 //   {
 //     id: 1,
@@ -51,8 +50,6 @@
 //     demo: "https://tsucess.github.io/wizick/"
 //   },
 // ]
-
-
 
 // const Portfolio = () => {
 //   return (

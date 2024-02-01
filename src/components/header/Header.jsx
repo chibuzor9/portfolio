@@ -1,9 +1,9 @@
-import React from 'react'
-import './header.css'
-import CTA from './CTA'
-import ME from '../../assets/images/dp.jpeg'
-import HeaderSocials from './HeaderSocials'
-import Typewriter from '../typewriter/typewriter'
+import React from "react";
+import "./header.css";
+import CTA from "./CTA";
+import ME from "../../assets/images/dp.jpeg";
+import HeaderSocials from "./HeaderSocials";
+import Typewriter from "../typewriter/typewriter";
 
 const Header = () => {
   const strings = [
@@ -11,7 +11,7 @@ const Header = () => {
     "Python Expert",
     "React Intermediate",
     "Flask Beginner",
-    "Angular Beginner"
+    "Angular Beginner",
   ];
 
   return (
@@ -26,10 +26,12 @@ const Header = () => {
         <div className="me">
           <img src={ME} alt="Profile Picture" />
         </div>
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+        <a href="#contact" className="scroll__down">
+          Scroll Down
+        </a>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
