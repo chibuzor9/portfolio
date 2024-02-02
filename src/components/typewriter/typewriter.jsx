@@ -25,7 +25,7 @@ const Typewriter = ({ texts: text }) => {
     return () => clearInterval(timer);
   }, [text, current]);
 
-  return <h3 style={{ overflow: "hidden", height: "50px" }}>{display}</h3>;
+  return <h3 style={{ height: "50px" }}>{display}</h3>;
 };
 
 export default Typewriter;
