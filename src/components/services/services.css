@@ -68,7 +68,7 @@
 
 /* ******** MEDIA QUERIES (SMALL DEVICES)   ******** */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .services__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;

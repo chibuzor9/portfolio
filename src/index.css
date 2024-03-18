@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 
 * {
   margin: 0;
@@ -39,34 +39,6 @@
     --color-dark: #ffffff;
   }
 }
-
-/*
-:root {
-  --primary-bg: #0b0c10;
-  --secondary-bg: #1f2833;
-  --primary-text: #66fcf1;
-  --secondary-text: #45a29e;
-  --natural-text: #edf0ef;
-  --color-white: #ffffff;
-  --color-dark: #000000;
-
-  //
-  --primary-bg: #f4f3ef;
-  --secondary-bg: #e0d7cc;
-  --primary-text: #0a66c2; //#99030e
-  --secondary-text: #0b7ae8; // #ba5d61
-  --natural-text: #120f10;
-  --color-white: #000000;
-  --color-dark: #ffffff;
-  //
-
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
-
-  --transition: all 400ms ease;
-}
-*/
 
 html {
   scroll-behavior: smooth;
@@ -177,7 +149,7 @@ img {
 
 /* ******** MEDIA QUERIES (SMALL DEVICES)   ******** */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .container {
     width: var(--container-width-sm);
   }
