@@ -3,7 +3,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "motion/react";
 import { profile } from "../../data/profile";
 import Typewriter from "../ui/Typewriter";
-import avatar from "../../assets/images/github-avatar.jpg";
+import { useGithubAvatar } from "../../hooks/useGithubAvatar";
+import fallbackAvatar from "../../assets/images/github-avatar.jpg";
 
 const socials = [
   { href: profile.socials.github, label: "GitHub", Icon: FiGithub },
@@ -22,6 +23,8 @@ const item = {
 };
 
 export default function Hero() {
+  const { src: avatar, isLive } = useGithubAvatar(profile.handle, fallbackAvatar);
+
   return (
     <section id="home" className="relative flex min-h-svh items-center overflow-hidden pt-16">
       {/* Background glow + grid */}
@@ -91,14 +94,27 @@ export default function Hero() {
         <motion.div variants={item} className="relative mx-auto w-56 sm:w-72 md:w-full md:max-w-xs">
           <div aria-hidden="true" className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-accent/40 via-accent/5 to-transparent blur-xl" />
           <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-border bg-surface shadow-2xl">
+            {/* Bundled photo paints instantly; the live GitHub avatar fades in over it once downloaded. */}
             <img
-              src={avatar}
-              alt={`${profile.name}, ${profile.title}`}
+              src={fallbackAvatar}
+              alt={isLive ? "" : `${profile.name}, ${profile.title}`}
+              aria-hidden={isLive}
               width="460"
               height="460"
               loading="eager"
               fetchPriority="high"
               className="h-full w-full object-cover"
+            />
+            <img
+              src={avatar}
+              alt={`${profile.name}, ${profile.title}`}
+              width="460"
+              height="460"
+              loading="lazy"
+              decoding="async"
+              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${
+                isLive ? "opacity-100" : "opacity-0"
+              }`}
             />
           </div>
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-border bg-bg-elevated px-4 py-1.5 font-mono text-xs text-fg-muted shadow-lg">
