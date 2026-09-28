@@ -82,7 +82,7 @@ export default function Navbar({ theme, onToggleTheme }) {
             <ThemeIcon size={16} />
           </button>
 
-          <a href={`${import.meta.env.BASE_URL}${profile.resume}`} target="_blank" rel="noreferrer" className="btn-primary hidden md:inline-flex">
+          <a href={profile.resume} target="_blank" rel="noreferrer" className="btn-primary hidden md:inline-flex">
             Resume
           </a>
 
@@ -125,7 +125,7 @@ export default function Navbar({ theme, onToggleTheme }) {
               ))}
               <li className="mt-3 px-3">
                 <a
-                  href={`${import.meta.env.BASE_URL}${profile.resume}`}
+                  href={profile.resume}
                   target="_blank"
                   rel="noreferrer"
                   onClick={() => setOpen(false)}

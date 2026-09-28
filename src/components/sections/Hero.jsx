@@ -1,4 +1,4 @@
-import { FiArrowDown, FiDownload, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiArrowDown, FiExternalLink, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "motion/react";
 import { profile } from "../../data/profile";
@@ -67,9 +67,9 @@ export default function Hero() {
             <a href="#projects" className="btn-primary">
               View my work
             </a>
-            <a href={`${import.meta.env.BASE_URL}${profile.resume}`} target="_blank" rel="noreferrer" className="btn-secondary">
-              <FiDownload size={16} />
-              Download resume
+            <a href={profile.resume} target="_blank" rel="noreferrer" className="btn-secondary">
+              <FiExternalLink size={16} />
+              View resume
             </a>
           </motion.div>
 

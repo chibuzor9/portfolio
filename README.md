@@ -21,7 +21,7 @@ src/
     sections/  Hero, About, Projects, Skills, Contact
     ui/        Reveal, SectionHeading, Typewriter
   hooks/       useTheme, useActiveSection
-public/        favicon, manifest, resume PDF
+public/        favicon, manifest
 ```
 
 ## Develop
@@ -44,7 +44,7 @@ npm run deploy    # builds and pushes dist/ to the gh-pages branch
 
 - **Projects:** edit `src/data/projects.js`. Set `featured: true` for the large cards. Omit `live` when there is no deployment.
 - **Skills:** edit `src/data/skills.js`.
-- **Bio, links, resume filename:** edit `src/data/profile.js`. The resume PDF lives in `public/`.
+- **Bio, links, resume URL:** edit `src/data/profile.js`. Resume buttons open the Google Drive preview. Set the file's sharing access to **Anyone with the link → Viewer**. To update the PDF while keeping the same URL, use **Manage versions → Upload new version** on the existing Drive file; uploading a separate file creates a new URL.
 
 ## License
 

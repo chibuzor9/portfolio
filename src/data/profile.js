@@ -8,7 +8,7 @@ export const profile = {
   email: "emmanuelchibuzor2005@gmail.com",
   phoneDisplay: "+234 901 430 7553",
   whatsapp: "https://api.whatsapp.com/send?phone=2349014307553",
-  resume: "Chibuzor-Emmanuel-Resume.pdf",
+  resume: "https://drive.google.com/file/d/1DnvV0IG_1fQ1FQT49z5qVpB7i1rTYtiY/view?usp=drive_link",
   openTo: [
     "Software Engineering",
     "Full-Stack Development",

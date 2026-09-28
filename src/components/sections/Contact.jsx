@@ -55,7 +55,7 @@ export default function Contact() {
                     <FiMail size={16} />
                     Say hello
                   </a>
-                  <a href={`${import.meta.env.BASE_URL}${profile.resume}`} target="_blank" rel="noreferrer" className="btn-secondary">
+                  <a href={profile.resume} target="_blank" rel="noreferrer" className="btn-secondary">
                     View resume
                   </a>
                 </div>
