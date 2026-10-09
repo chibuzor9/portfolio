@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => ({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   base: mode === 'github' ? '/portfolio/' : '/',
 }))
