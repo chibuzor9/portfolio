@@ -4,7 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Served from https://chibuzor9.github.io/portfolio/
-  base: "/portfolio/",
+  base: "/",
   plugins: [react(), tailwindcss()],
 });
