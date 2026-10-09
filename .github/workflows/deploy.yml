@@ -24,7 +24,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run build
+      - run: npx vite build --mode github
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
