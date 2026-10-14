@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "type": "module",
-  "homepage": "https://chibuzor9.github.io/portfolio",
+  "homepage": "https://chibuzor.app",
   "scripts": {
     "dev": "vite",
     "start": "vite",

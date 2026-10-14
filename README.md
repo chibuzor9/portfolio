@@ -2,7 +2,7 @@
 
 Personal portfolio of Chibuzor Emmanuel, software engineer.
 
-**Live:** https://chibuzor9.github.io/portfolio
+**Live:** https://chibuzor.app
 
 ## Stack
 
@@ -28,7 +28,7 @@ public/        favicon, manifest
 
 ```bash
 npm install
-npm run dev       # http://localhost:5173/portfolio/
+npm run dev       # http://localhost:5173/
 npm run build     # outputs to dist/
 npm run preview   # serve the production build
 npm run lint
