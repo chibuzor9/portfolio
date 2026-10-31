@@ -93,26 +93,20 @@ export default function Hero() {
 
         <motion.div variants={item} className="relative mx-auto w-56 sm:w-72 md:w-full md:max-w-xs">
           <div aria-hidden="true" className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-accent/40 via-accent/5 to-transparent blur-xl" />
-          <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-border bg-surface shadow-2xl">
+          <div
+            className="relative aspect-square overflow-hidden rounded-[2rem] border border-border bg-surface bg-cover bg-center shadow-2xl"
+            style={{ backgroundImage: `url(${fallbackAvatar})` }}
+          >
             {/* Bundled photo paints instantly; the live GitHub avatar fades in over it once downloaded. */}
-            <img
-              src={fallbackAvatar}
-              alt={isLive ? "" : `${profile.name}, ${profile.title}`}
-              aria-hidden={isLive}
-              width="460"
-              height="460"
-              loading="eager"
-              fetchPriority="high"
-              className="h-full w-full object-cover"
-            />
             <img
               src={avatar}
               alt={`${profile.name}, ${profile.title}`}
               width="460"
               height="460"
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
-              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${
+              className={`h-full w-full object-cover transition-opacity duration-500 ${
                 isLive ? "opacity-100" : "opacity-0"
               }`}
             />
